@@ -1,0 +1,32 @@
+{
+  "version": "2.0",
+  "app_name": "WRA6-Linebot",
+  "stages": {
+    "dev": {
+      "api_gateway_stage": "dev",
+      "environment_variables": {
+        "CHANNEL_TOKEN": "TOKEN",
+        "CHANNEL_SECRET": "SECRET",
+        "DB_HOST":"RDS",
+        "DB_PORT":"5432",
+        "DB_DATABASE":"RDS_DB",
+        "DB_USER":"RDS_USER_ACC",
+        "DB_PASSWORD":"RDS_USER_PASS",
+        "AWS_BUCKET":"AWS_BUCKET"
+      }
+    },
+    "prod": {
+      "api_gateway_stage": "api",
+      "environment_variables": {
+        "CHANNEL_TOKEN": "TOKEN",
+        "CHANNEL_SECRET": "SECRET",
+        "DB_HOST":"RDS",
+        "DB_PORT":"5432",
+        "DB_DATABASE":"RDS_DB",
+        "DB_USER":"RDS_USER_ACC",
+        "DB_PASSWORD":"RDS_USER_PASS",
+        "AWS_BUCKET":"AWS_BUCKET"
+      }
+    }
+  }
+}

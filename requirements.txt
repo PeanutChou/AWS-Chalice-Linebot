@@ -1,0 +1,4 @@
+chalice
+line-bot-sdk
+pg8000
+requests
